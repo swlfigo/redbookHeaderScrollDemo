@@ -6,6 +6,8 @@
 
 Swift练手项目..项目可能存在很多不足..效果如下图所示..
 
+参考大佬思路实现-> :[大佬Demo传送门](https://github.com/wuzhantu/redbook)
+
 小红书App中效果:
 
 ![redbookAppGif](http://okslxr2o0.bkt.clouddn.com/redbookAppGif.gif)
