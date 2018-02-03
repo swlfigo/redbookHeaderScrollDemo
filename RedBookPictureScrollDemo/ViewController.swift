@@ -92,5 +92,9 @@ class ViewController: UIViewController , pictureScrollViewDeleagate  {
         print("转到了第 \(btn.tag - 9000 + 1) 页")
         
     }
+    
+    func pictureScrollViewDidScrollToIndex(_ pictureScrollView: PictureScrollView, atIndex: Int) {
+        print(atIndex)
+    }
 }
 

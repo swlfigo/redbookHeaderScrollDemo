@@ -9,14 +9,22 @@
 import UIKit
 
 
-@objc protocol pictureScrollViewDeleagate :NSObjectProtocol {
+protocol pictureScrollViewDeleagate : NSObjectProtocol {
     
     //此方法每次滑动回调,代理可以根据回调高度调整此控件高度
     func pictureScrollViewDidScroll(_ pictureScrollView : PictureScrollView , contentOffset : CGPoint  , pictureScrollViewSuitHeight : CGFloat)
     
-    //获得滑动后index
-    @objc optional func pictureScrollViewDidScrollToIndex (_ pictureScrollView : PictureScrollView , atIndex : Int)
+    func pictureScrollViewDidScrollToIndex (_ pictureScrollView : PictureScrollView , atIndex : Int)
+    
 }
+
+extension pictureScrollViewDeleagate{
+    //获得滑动后index
+    func pictureScrollViewDidScrollToIndex (_ pictureScrollView : PictureScrollView , atIndex : Int){
+        
+    }
+}
+
 
 class PictureScrollView: UIView  {
     
@@ -219,7 +227,7 @@ extension PictureScrollView:UIScrollViewDelegate{
         //需要外部遵循代理，实时改变Self的Frame大小
         self.delegate?.pictureScrollViewDidScroll(self, contentOffset: scrollView.contentOffset, pictureScrollViewSuitHeight: pictureScrollViewHeight)
         
-        self.delegate?.pictureScrollViewDidScrollToIndex?(self, atIndex: Int(offsetX / self.bounds.size.width))
+        self.delegate?.pictureScrollViewDidScrollToIndex(self, atIndex: Int(offsetX / self.bounds.size.width))
     }
     
     //拖动，手指离开屏幕
