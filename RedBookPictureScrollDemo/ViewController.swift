@@ -93,8 +93,5 @@ class ViewController: UIViewController , pictureScrollViewDeleagate  {
         
     }
     
-    func pictureScrollViewDidScrollToIndex(_ pictureScrollView: PictureScrollView, atIndex: Int) {
-        print(atIndex)
-    }
 }
 
