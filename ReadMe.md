@@ -10,12 +10,12 @@ Swift练手项目..项目可能存在很多不足..效果如下图所示..
 
 小红书App中效果:
 
-![redbookAppGif](http://okslxr2o0.bkt.clouddn.com/redbookAppGif.gif)
+![](http://sylarimage.oss-cn-shenzhen.aliyuncs.com/2019-07-21-redbookAppGif.gif)
 
 
 Demo效果: 
 
-![redbookHeaderDemo](http://okslxr2o0.bkt.clouddn.com/redbookHeaderDemo.gif)
+![](http://sylarimage.oss-cn-shenzhen.aliyuncs.com/2019-07-21-redbookHeaderDemo.gif)
 
 
 控件添加了可用于下拉刷新情景的重新加载,定位到刷新前位置功能
